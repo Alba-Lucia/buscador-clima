@@ -1,8 +1,10 @@
-import { ReactNode } from "react";
-import styles from './Alert.module.css'
+import { ReactNode } from 'react'
+import styles  from './Alert.module.css'
 
-export default function Alert({children} : {children : ReactNode}) {
+export const Alert = ({children} : {children: ReactNode}) => {
   return (
-    <div className={styles.alert}>{children}</div>
+    <div className={styles.alert}>
+        {children}
+    </div>
   )
 }

@@ -1,31 +1,40 @@
+.form {
+  margin-bottom: 40px;
+}
 .form,
 .field {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .form input[type="text"],
-.form select {
-    padding: 1rem;
-    background-color: transparent;
-    border: .3rem solid var(--white);
-    color: var(--white);
-    font-size: 1.8rem;
-    font-weight: 400;
-    border-radius: 1rem;
+select {
+  padding: 1rem;
+  background-color: transparent;
+  border: 0.3rem solid var(--white);
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
+
+option {
+    background-color: red;
+  color: #000 !important;
+}
+
 .field ::placeholder {
-    color: var(--white);
+  color: var(--white);
 }
 
 .submit {
-    background-color: var(--primary);
-    border: none;
-    color: var(--white);
-    font-weight: 700;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 1rem;
+  background-color: var(--primary);
+  padding: 1rem;
+
+  border: white;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
